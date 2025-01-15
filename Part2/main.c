@@ -1,4 +1,4 @@
-/* main.c : This file contains the 'main' function of webcast number two in the series.
+/* main.c : This file contains the 'main' function of the second webcast in the series.
 *  We see how different data types represented in memory, how they can cause undefined behaviors.
 *  Learn how to manipulate bits to represent as flags, and about the concept of pointers */
 
@@ -37,7 +37,7 @@ main(VOID)
 
     UINT nextClass = 770; // 0x302
 
-    printf("is min == max? %s\n", min == max ? "YES" : "NO"); // Answer is yes because 0xFFFFFFFF = 0xFFFFFFFF
+    printf("is min == max? %s\n", min == max ? "YES" : "NO"); // Answer is yes because (int) -1 = 0xFFFFFFFF = 0xFFFFFFFF = 4,294,967,296
     printf("is max > min? %s\n", max > min ? "YES" : "NO"); // Answer is no because 0xFFFFFFFF is not greater than 0xFFFFFFFF
 
     printf("is %d a multiple of 16? %s\n", nextClass, FlagOn(nextClass, SixTeen) ? "YES" : "NO"); // Answer is no because 0x10 bits is not set in 0x302

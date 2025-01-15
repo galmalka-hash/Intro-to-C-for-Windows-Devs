@@ -3,6 +3,10 @@
 #include <Windows.h>
 #include <stdio.h>
 
+//#define LAB1
+
+#ifdef LAB1
+
 INT
 main(VOID)
 {
@@ -23,3 +27,5 @@ main(VOID)
 	INT ip = 2130706433;
 	UINT ip2 = 0x7F000001;
 }
+
+#endif // LAB1
