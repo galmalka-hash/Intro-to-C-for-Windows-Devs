@@ -4,10 +4,10 @@
 #include <stdio.h>
 #include <Windows.h>
 
-#define PART3
+// #define PART3
 #ifdef PART3
 
-#define __cdecl CDECL
+#define __cdecl CDECL // The standard call
 #define COUNTOF_NAMES 4
 
 DWORD

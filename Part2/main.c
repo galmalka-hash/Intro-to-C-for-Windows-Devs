@@ -6,6 +6,9 @@
 #include <stdio.h>
 #include <string.h>
 
+// #define PART2
+#ifdef PART2
+
 // Some macros to check, set, and clear certain bit in data
 #define FlagOn( Flags, TheFlag )    ( (Flags) & (TheFlag) )
 #define SetFlag( Flags, TheFlag )    ( (Flags) |= (TheFlag) )
@@ -97,3 +100,5 @@ main(VOID)
 
     return ERROR_SUCCESS;
 }
+
+#endif // PART2
